@@ -36,7 +36,7 @@ public class Biblioteca {
         System.out.println();
     }
 
-    // NUEVO: Buscar libros (por título, autor o ISBN)
+    // Buscar libros (por título, autor o ISBN)
     public void buscarLibros(String termino) {
         System.out.println("\n RESULTADOS PARA: '" + termino + "'");
         boolean encontrado = false;
@@ -56,7 +56,7 @@ public class Biblioteca {
         System.out.println();
     }
 
-    // NUEVO: Eliminar libro (por índice, 1-based)
+    // Eliminar libro (por índice, 1-based)
     public void eliminarLibro(int indice) {
         if (indice < 1 || indice > registroBiblioteca.size()) {
             System.out.println("Índice inválido.");
@@ -66,7 +66,7 @@ public class Biblioteca {
         System.out.println("Libro eliminado: " + eliminado);
     }
 
-    // NUEVO: Guardar en archivo (simple TXT)
+    // Guardar en archivo (simple TXT)
     public void guardarEnArchivo(String archivo) {
         try (FileWriter writer = new FileWriter(archivo)) {
             writer.write("Biblioteca: " + nombre + "\n");
@@ -98,15 +98,15 @@ public class Biblioteca {
         agregarLibro(nuevo);
     }
 
-    // ¡MENÚ PRINCIPAL INTERACTIVO ACTUALIZADO!
+    // ¡MENÚ PRINCIPAL INTERACTIVO!
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Biblioteca biblio = new Biblioteca("Biblioteca Grok ⚡");
+        Biblioteca biblio = new Biblioteca("Biblioteca Hugo ⚡");
 
         // Ejemplos iniciales
         biblio.agregarLibro(new Libro("El Quijote", "978-84-663-XXXX-X", "Cervantes", 1605, "Clásico"));
         biblio.agregarLibro(new Libro("1984", "978-0-452-28423-4", "Orwell", 1949, "Distopía"));
-        biblio.agregarLibro(new Libro("Clean Code", "978-0-13-235088-4", "Uncle Bob", 2008, "Técnico"));
+        biblio.agregarLibro(new Libro("El principito", "978-0-13-235088-4", "Antoine de Saint-Exupéry", 1943, "Novela corta"));
 
         int opcion;
         do {

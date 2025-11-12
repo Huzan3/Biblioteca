@@ -14,7 +14,7 @@ public class Libro {
         this.tipoLibro = tipoLibro;
     }
 
-    // Getters (para búsquedas y más)
+    // Getters
     public String getTitulo() { return titulo; }
     public String getIsbn() { return isbn; }
     public String getAutor() { return autor; }
