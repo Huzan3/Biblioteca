@@ -1,0 +1,9 @@
+Biblioteca: Biblioteca Grok ⚡
+Total libros: 3
+
+📖 El Quijote | ISBN: 978-84-663-XXXX-X | Autor: Cervantes | Año: 1605 | Tipo: Clásico
+---
+📖 1984 | ISBN: 978-0-452-28423-4 | Autor: Orwell | Año: 1949 | Tipo: Distopía
+---
+📖 Clean Code | ISBN: 978-0-13-235088-4 | Autor: Uncle Bob | Año: 2008 | Tipo: Técnico
+---
