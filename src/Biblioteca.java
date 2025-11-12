@@ -53,7 +53,7 @@ public class Biblioteca {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Biblioteca biblio = new Biblioteca("Biblioteca Grok ⚡");
+        Biblioteca biblio = new Biblioteca("Biblioteca Hugo ⚡");
 
         // Ejemplos iniciales
         biblio.agregarLibro(new Libro("El Quijote", "978-84-663-XXXX-X", "Cervantes", 1605, "Clásico"));
