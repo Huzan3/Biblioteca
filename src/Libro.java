@@ -14,10 +14,17 @@ public class Libro {
         this.tipoLibro = tipoLibro;
     }
 
+    // Getters (para búsquedas y más)
+    public String getTitulo() { return titulo; }
+    public String getIsbn() { return isbn; }
+    public String getAutor() { return autor; }
+    public int getAño() { return año; }
+    public String getTipoLibro() { return tipoLibro; }
+
     // toString para mostrar fácilmente
     @Override
     public String toString() {
-        return "" + titulo +
+        return "📖 " + titulo +
                 " | ISBN: " + isbn +
                 " | Autor: " + autor +
                 " | Año: " + año +
